@@ -11,27 +11,7 @@ The **Node-RED dashboard** subscribes to MQTT topics to visualize the live senso
 
 ## 📐 System Architecture  
 
-    LOCAL WI-FI NETWORK                         INTERNET (REMOTE)
-        LOCAL WI-FI NETWORK                         INTERNET (REMOTE)
- ┌──────────────────────────────┐            ┌─────────────────────────────┐
- │                              │            │                             │
- │  ┌────────────┐              │            │                             │
- │  │   ESP32    │◄────────────┐│            │                             │
- │  │(CoAP Server)│             │            │                             │
- │  └────┬───────┘              │            ▼                             ▼
- │       │                      │      MQTT BROKER (Mosquitto)        NODE-RED
- │       ▼                      │      mqtt://test.mosquitto.org      DASHBOARD
- │  ┌────────────┐              │            ▲                             ▲
- │  │   Your PC  │──────────────┼────────────┘                             │
- │  │ (Bridge)   │              │                                          │
- │  └────────────┘              │                                          │
- │       ▲                      │                                          │
- │       │                      │                                          │
- │  ┌────┴──────┐               │                                          │
- │  │  Mobile   │◄──────────────┘                                          │
- │  │ CoAP Client│ (Local use)                                             │
- │  └────────────┘                                                         │
- └──────────────────────────────┘                                         └
+    ![Uploading image.png…]()
 
 
 
