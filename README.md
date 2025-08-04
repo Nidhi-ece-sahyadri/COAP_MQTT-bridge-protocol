@@ -2,6 +2,7 @@
 This project integrates CoAP and MQTT for efficient IoT communication. An ESP32 acts as a CoAP server sending sensor data to a PC client, which bridges and publishes it to the Mosquitto MQTT broker. Node-RED subscribes to the topics and visualizes temperature and humidity on a live dashboard.
 # ✅ IoT Sensor Monitoring using CoAP and MQTT
 
+
 ## 📌 Overview  
 This project demonstrates a **hybrid IoT architecture** combining **CoAP** (for local, lightweight communication) and **MQTT** (for cloud-based remote monitoring).  
 An **ESP32** device acts as a CoAP server, sending **temperature** and **humidity** data to a **PC-based bridge**, which then forwards the data to the **Mosquitto MQTT Broker**.  
