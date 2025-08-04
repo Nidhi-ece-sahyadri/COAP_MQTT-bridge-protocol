@@ -89,6 +89,11 @@ The ESP32 CoAP server exposes a single resource `/sensor`, which returns both te
 
 `"Temperature: 28.5C, Humidity: 70.2%"`
 
+## 🧰 Install Node-RED if not installed
+---
+
+    npm install -g --unsafe-perm node-red
+
 
 
 
