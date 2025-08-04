@@ -11,7 +11,8 @@ The **Node-RED dashboard** subscribes to MQTT topics to visualize the live senso
 
 ## 📐 System Architecture  
 
-    ![Uploading image.png…]()
+<img width="765" height="544" alt="Screenshot 2025-08-04 195747" src="https://github.com/user-attachments/assets/de134542-671d-43c4-b712-599551be35a2" />
+
 
 
 
