@@ -33,9 +33,12 @@ The **Node-RED dashboard** subscribes to MQTT topics to visualize the live senso
 ## 🔁 Step-by-Step Data Flow
 
 ### 🔹 1. ESP32 CoAP Server  
-ESP32 runs a CoAP server exposing:
-- `coap://<ESP32-IP>/temperature`
-- `coap://<ESP32-IP>/humidity`
+ESP32 runs a CoAP server exposing a single endpoint:
+- `coap://<ESP32-IP>/sensor`
+
+It responds to GET requests with a combined message:
+`Temperature: 28.5C, Humidity: 70.2%`
+
 
 It responds to GET requests with current sensor readings.
 
