@@ -82,12 +82,11 @@ It visualizes:
 
 ## 🔧 Setup & Commands
 
-### 🧠 ESP32 (CoAP Server)
-Flash the ESP32 with code that creates a CoAP server:
-     ```cpp
-             
-              
-              GET handlers for /temperature and /humidity
+`GET handler for /sensor`
+
+The ESP32 CoAP server exposes a single resource `/sensor`, which returns both temperature and humidity in a single response like:
+
+`"Temperature: 28.5C, Humidity: 70.2%"`
 
 
 
