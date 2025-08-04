@@ -98,11 +98,11 @@ The ESP32 CoAP server exposes a single resource `/sensor`, which returns both te
 Install dependencies:
 
 
-    ```cpp
+    ```
      pip install aiocoap paho-mqtt
 Run the bridge script:
 
-           ```cpp
+    ```
 
             python bridge.py
 
@@ -111,9 +111,9 @@ Replace <ESP32-IP> with the actual local IP of your ESP32 in the script.
 
 ## 🌐 Node-RED Dashboard
 Subscribe to the topics:
-      ```cpp
+      ```
                 
-                mytest/temp
+            mytest/temp
 
             mytest/humi
 
