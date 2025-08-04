@@ -56,6 +56,23 @@ Node-RED subscribes to the MQTT topics using MQTT IN nodes.
 It visualizes:
 - Text values (`ui_text`)
 - Gauges (`ui_gauge`) for temperature and humidity
+  
+ 📥 How to Import into Node-RED
+ 
+Open Node-RED in your browser:
+`http://localhost:1880`
+
+Click on the menu (☰) → Import
+
+Paste the JSON above
+
+Click Import
+
+Click Deploy
+
+Go to the dashboard:
+`http://localhost:1880/ui`
+
 
 ---
 
@@ -89,7 +106,7 @@ The ESP32 CoAP server exposes a single resource `/sensor`, which returns both te
 
 `"Temperature: 28.5C, Humidity: 70.2%"`
 
-## 🧰 Install Node-RED if not installed
+## 🧰 Install Node-RED
 ---
 
     npm install -g --unsafe-perm node-red
@@ -99,9 +116,17 @@ The ESP32 CoAP server exposes a single resource `/sensor`, which returns both te
 
 
 
+
+
 ## 💻 Python CoAP Client + MQTT Publisher
 Install dependencies:
 
+## 🧰 Install Node-RED
+---
+
+    npm install -g --unsafe-perm node-red
+
+Fetches sensor data via CoAP and Publishes data to MQTT
 
     ```
      pip install aiocoap paho-mqtt
@@ -109,7 +134,7 @@ Run the bridge script:
 
     ```
 
-            python bridge.py
+        python bridge.py
 
 
 Replace <ESP32-IP> with the actual local IP of your ESP32 in the script.
